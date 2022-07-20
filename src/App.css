@@ -1,38 +1,104 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.yellow{
+  background: rgb(214, 214, 33);
+}
+.red{
+  background: rgb(238, 34, 7);
+}
+.purple{
+  background: rgb(171, 20, 241);
+}
+.green{
+  background: rgb(130, 196, 9);
+}
+.blue{
+  background: rgb(31, 90, 216);
+}
+.yellow:checked{
+  /* accent-color: rgb(27, 194, 216); */
+  outline: none;
+  background: rgb(214, 214, 33);
+  box-shadow: 0px 0px 0px 7px rgb(214, 214, 33);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.red:checked{
+  /* accent-color: rgb(27, 194, 216); */
+  outline: none;
+  background: rgb(238, 34, 7);
+  box-shadow: 0px 0px 0px 7px rgb(238, 34, 7);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.purple:checked{
+  /* accent-color: rgb(27, 194, 216); */
+  outline: none;
+  background: rgb(171, 20, 241);
+  box-shadow: 0px 0px 0px 7px rgb(171, 20, 241);
+}
+.green:checked{
+  /* accent-color: rgb(27, 194, 216); */
+  outline: none;
+  background: rgb(130, 196, 9);
+  box-shadow: 0px 0px 0px 7px rgb(130, 196, 9);
+}
+.blue:checked{
+  /* accent-color: rgb(27, 194, 216); */
+  outline: none;
+  background: rgb(31, 90, 216);
+  box-shadow: 0px 0px 0px 7px rgb(31, 90, 216);
+}
+
+
+
+input[type='radio']{
+ margin-top: 15px ;
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+ 
+}
+input[type='radio']:checked:before{
+  content:' ';
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+
+
+
+
+ 
+}
+/* input[type='radio']:checked:after{
+  color: #000000;
+  width: 30px;
+  height: 5px;
+  font-size: 25px;
+ 
+} */
+
+
+/* input[type='checkbox'] {
+  accent-color: red;
+  background-color: purple;
+  color: purple;
+} */
+
+
+.row-div{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.notes-div{
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 150px;
+overflow-wrap: break-word;
+color: #ffffff;
+box-shadow: 0 0 15px 1px #000000;
 }
